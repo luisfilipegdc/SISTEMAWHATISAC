@@ -141,6 +141,7 @@ const MainListItems = (props) => {
   const [openCampaignSubmenu, setOpenCampaignSubmenu] = useState(false);
   const [showCampaigns, setShowCampaigns] = useState(false);
   const [showKanban, setShowKanban] = useState(false);
+  const [openKanbanSubmenu, setOpenKanbanSubmenu] = useState(false);
   const [showOpenAi, setShowOpenAi] = useState(false);
   const [showIntegrations, setShowIntegrations] = useState(false); const history = useHistory();
   const [showSchedules, setShowSchedules] = useState(false);
@@ -303,11 +304,48 @@ const MainListItems = (props) => {
       />
 	  
 	{showIntegrations && (  
-	  <ListItemLink
-        to="/kanban"
-        primary={i18n.t("Kanban")}
-        icon={<TableChartIcon />}
-      />
+    <>
+    <ListItem
+        button
+        onClick={() => setOpenKanbanSubmenu((prev) => !prev)}
+      >
+        <ListItemIcon>
+          <LoyaltyRounded />
+        </ListItemIcon>
+        <ListItemText
+          primary={i18n.t("mainDrawer.listItems.kanban")}
+        />
+        {openKanbanSubmenu ? (
+          <ExpandLessIcon />
+        ) : (
+          <ExpandMoreIcon />
+        )}
+      </ListItem>
+      <Collapse
+        style={{ paddingLeft: 15 }}
+        in={openKanbanSubmenu}
+        timeout="auto"
+        unmountOnExit
+      >
+        <List component="div" disablePadding>
+          <ListItem onClick={() => history.push("/kanban")} button>
+            <ListItemIcon>
+              <ListIcon />
+            </ListItemIcon>
+            <ListItemText primary={i18n.t("kanban.subMenus.list")} />
+          </ListItem>
+          <ListItem
+            onClick={() => history.push("/tagsKanban")}
+            button
+          >
+            <ListItemIcon>
+              <CalendarToday />
+            </ListItemIcon>
+            <ListItemText primary={i18n.t("kanban.subMenus.tags")} />
+          </ListItem>
+        </List>
+      </Collapse>
+	  </>
 	  )}
 
 
