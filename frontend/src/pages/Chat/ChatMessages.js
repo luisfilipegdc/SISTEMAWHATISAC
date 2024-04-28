@@ -58,7 +58,7 @@ const useStyles = makeStyles((theme) => ({
     padding: "10px 10px 5px",
     margin: "10px 10px 10px auto",
     position: "relative",
-    backgroundColor: "green", //DARK MODE PLW DESIGN//
+    backgroundColor: "#8bb0ff", //DARK MODE PLW DESIGN//
     textAlign: "right",
     maxWidth: 300,
     borderRadius: 10,
