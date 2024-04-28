@@ -22,7 +22,7 @@ const Copyright = () => {
 		<Typography variant="body2" color="light" align="center">
 			{"Copyright "}
  			<Link color="light" href="https://whatisac.com.br/">
- 				{ nomeEmpresa } - versão { versionSystem } |
+ 				- { nomeEmpresa } - versão { versionSystem } | Ano
  			</Link>{" "}
  			{new Date().getFullYear()}
  			{"."}
