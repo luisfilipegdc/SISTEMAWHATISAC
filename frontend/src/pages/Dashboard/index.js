@@ -686,7 +686,7 @@ const Dashboard = () => {
               loading={loading}
               onClick={() => fetchData()}
               variant="contained"
-              color="primary"
+              color="#131b32"
             >
               Filtrar
             </ButtonWithSpinner>
