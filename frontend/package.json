@@ -2,7 +2,7 @@
   "name": "frontend",
   "version": "0.1.0",
   "versionSystem": "4.6.2",
-  "nomeEmpresa": "Massterbot",
+  "nomeEmpresa": "Whatisac",
   "private": true,
   "dependencies": {
 	"@emotion/styled": "^11.10.6",
