@@ -130,7 +130,7 @@ const useStyles = makeStyles((theme) => ({
     overflow: "auto",
     flexDirection: "column",
     height: "100%",
-    backgroundColor: "#4db1ff",
+    backgroundColor: "#0050ff",
     color: "#eee",
   },
   card2: {
@@ -139,7 +139,7 @@ const useStyles = makeStyles((theme) => ({
     overflow: "auto",
     flexDirection: "column",
     height: "100%",
-    backgroundColor: "#4db1ff",
+    backgroundColor: "#0050ff",
     color: "#eee",
   },
   card3: {
@@ -148,7 +148,7 @@ const useStyles = makeStyles((theme) => ({
     overflow: "auto",
     flexDirection: "column",
     height: "100%",
-    backgroundColor: "#4db1ff",
+    backgroundColor: "#0050ff",
     color: "#eee",
   },
   card4: {
@@ -157,7 +157,7 @@ const useStyles = makeStyles((theme) => ({
     overflow: "auto",
     flexDirection: "column",
     height: "100%",
-    backgroundColor: "#4db1ff",
+    backgroundColor: "#0050ff",
     color: "#eee",
   },
   card5: {
@@ -166,7 +166,7 @@ const useStyles = makeStyles((theme) => ({
     overflow: "auto",
     flexDirection: "column",
     height: "100%",
-    backgroundColor: "#4db1ff",
+    backgroundColor: "#0050ff",
     color: "#eee",
   },
   card6: {
@@ -175,7 +175,7 @@ const useStyles = makeStyles((theme) => ({
     overflow: "auto",
     flexDirection: "column",
     height: "100%",
-    backgroundColor: "#4db1ff",
+    backgroundColor: "#0050ff",
     color: "#eee",
   },
   card7: {
@@ -184,7 +184,7 @@ const useStyles = makeStyles((theme) => ({
     overflow: "auto",
     flexDirection: "column",
     height: "100%",
-    backgroundColor: "#4db1ff",
+    backgroundColor: "#0050ff",
     color: "#eee",
   },
   card8: {
@@ -193,7 +193,7 @@ const useStyles = makeStyles((theme) => ({
     overflow: "auto",
     flexDirection: "column",
     height: "100%",
-    backgroundColor: "#4db1ff",
+    backgroundColor: "#0050ff",
     color: "#eee",
   },
   card9: {
@@ -202,7 +202,7 @@ const useStyles = makeStyles((theme) => ({
     overflow: "auto",
     flexDirection: "column",
     height: "100%",
-    backgroundColor: "#4db1ff",
+    backgroundColor: "#0050ff",
     color: "#eee",
   },
   fixedHeightPaper2: {
