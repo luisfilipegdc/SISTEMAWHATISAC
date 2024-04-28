@@ -415,7 +415,7 @@ const LoggedInLayout = ({ children, themeToggle }) => {
             <CachedIcon style={{ color: "white" }} />
           </IconButton>
 
-          {user.id && <NotificationsPopOver volume={volume} />}
+          {user.id && <NotificationsPopOver/>}
 
           <AnnouncementsPopover />
 
