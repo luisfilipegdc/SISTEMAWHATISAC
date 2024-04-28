@@ -302,46 +302,13 @@ const MainListItems = (props) => {
         icon={<WhatsAppIcon />}
       />
 	  
-    <ListItem
-        button
-        onClick={() => setOpenKanbanSubmenu((prev) => !prev)}
-      >
-        <ListItemIcon>
-          <LoyaltyRounded />
-        </ListItemIcon>
-        <ListItemText
-          primary={i18n.t("mainDrawer.listItems.kanban")}
-        />
-        {openKanbanSubmenu ? (
-          <ExpandLessIcon />
-        ) : (
-          <ExpandMoreIcon />
-        )}
-      </ListItem>
-      <Collapse
-        style={{ paddingLeft: 15 }}
-        in={openKanbanSubmenu}
-        timeout="auto"
-        unmountOnExit
-      >
-        <List component="div" disablePadding>
-          <ListItem onClick={() => history.push("/kanban")} button>
-            <ListItemIcon>
-              <ListIcon />
-            </ListItemIcon>
-            <ListItemText primary={i18n.t("kanban.subMenus.list")} />
-          </ListItem>
-          <ListItem
-            onClick={() => history.push("/tagsKanban")}
-            button
-          >
-            <ListItemIcon>
-              <CalendarToday />
-            </ListItemIcon>
-            <ListItemText primary={i18n.t("kanban.subMenus.tags")} />
-          </ListItem>
-        </List>
-      </Collapse>
+	{showIntegrations && (  
+	  <ListItemLink
+        to="/kanban"
+        primary={i18n.t("Kanban")}
+        icon={<TableChartIcon />}
+      />
+	  )}
 
 
       <ListItemLink
