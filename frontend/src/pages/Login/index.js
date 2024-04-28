@@ -19,9 +19,9 @@ import logo from "../../assets/logo.png";
 
 const Copyright = () => {
 	return (
-		<Typography variant="body2" color="primary" align="center">
+		<Typography variant="body2" color="white" align="center">
 			{"Copyright "}
- 			<Link color="primary" href="#">
+ 			<Link color="#white" href="https://whatisac.com.br/">
  				{ nomeEmpresa } - v { versionSystem }
  			</Link>{" "}
  			{new Date().getFullYear()}
