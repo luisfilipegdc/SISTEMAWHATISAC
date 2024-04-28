@@ -130,7 +130,7 @@ const useStyles = makeStyles((theme) => ({
     overflow: "auto",
     flexDirection: "column",
     height: "100%",
-    backgroundColor: "#11bf42",
+    backgroundColor: "#4db1ff",
     color: "#eee",
   },
   card2: {
@@ -139,7 +139,7 @@ const useStyles = makeStyles((theme) => ({
     overflow: "auto",
     flexDirection: "column",
     height: "100%",
-    backgroundColor: "#748e9d",
+    backgroundColor: "#4db1ff",
     color: "#eee",
   },
   card3: {
@@ -148,7 +148,7 @@ const useStyles = makeStyles((theme) => ({
     overflow: "auto",
     flexDirection: "column",
     height: "100%",
-    backgroundColor: "#e53935",
+    backgroundColor: "#4db1ff",
     color: "#eee",
   },
   card4: {
@@ -157,7 +157,7 @@ const useStyles = makeStyles((theme) => ({
     overflow: "auto",
     flexDirection: "column",
     height: "100%",
-    backgroundColor: "#cc991b",
+    backgroundColor: "#4db1ff",
     color: "#eee",
   },
   card5: {
@@ -166,7 +166,7 @@ const useStyles = makeStyles((theme) => ({
     overflow: "auto",
     flexDirection: "column",
     height: "100%",
-    backgroundColor: "#47a7f6",
+    backgroundColor: "#4db1ff",
     color: "#eee",
   },
   card6: {
@@ -175,7 +175,7 @@ const useStyles = makeStyles((theme) => ({
     overflow: "auto",
     flexDirection: "column",
     height: "100%",
-    backgroundColor: "#b87d77",
+    backgroundColor: "#4db1ff",
     color: "#eee",
   },
   card7: {
@@ -184,7 +184,7 @@ const useStyles = makeStyles((theme) => ({
     overflow: "auto",
     flexDirection: "column",
     height: "100%",
-    backgroundColor: "#7bc780",
+    backgroundColor: "#4db1ff",
     color: "#eee",
   },
   card8: {
@@ -193,7 +193,7 @@ const useStyles = makeStyles((theme) => ({
     overflow: "auto",
     flexDirection: "column",
     height: "100%",
-    backgroundColor: "#b05c38",
+    backgroundColor: "#4db1ff",
     color: "#eee",
   },
   card9: {
@@ -202,7 +202,7 @@ const useStyles = makeStyles((theme) => ({
     overflow: "auto",
     flexDirection: "column",
     height: "100%",
-    backgroundColor: "#bd3c58",
+    backgroundColor: "#4db1ff",
     color: "#eee",
   },
   fixedHeightPaper2: {
@@ -426,7 +426,7 @@ const Dashboard = () => {
                   <CallIcon
                     style={{
                       fontSize: 100,
-                      color: "#0050FF",
+                      color: "#fff",
                     }}
                   />
                 </Grid>
