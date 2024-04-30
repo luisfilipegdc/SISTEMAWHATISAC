@@ -110,20 +110,6 @@ const Kanban = () => {
           href: "/tickets/" + ticket.uuid,
         })),
       },
-
-      {
-        id: "lane1",
-        title: i18n.t("Em atendimento"),
-        label: "1",
-        cards: filteredTickets.map(ticket => ({
-          id: ticket.id.toString(),
-          label: "Ticket nº " + ticket.id.toString(),
-          title: ticket.contact.name,
-          draggable: true,
-          href: "/tickets/" + ticket.uuid,
-        })),
-      },
-
       ...tags.map(tag => {
         const filteredTickets = tickets.filter(ticket => {
           const tagIds = ticket.tags.map(tag => tag.id);
