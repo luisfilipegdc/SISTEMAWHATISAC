@@ -186,7 +186,7 @@ const SignUp = () => {
 											{...field}
 											variant="outlined"
 											fullWidth
-											label="DDD988888888"
+											label="(DDD) 98888-8888"
 											inputProps={{ maxLength: 11 }} // Definindo o limite de caracteres
 										/>
 									)}
