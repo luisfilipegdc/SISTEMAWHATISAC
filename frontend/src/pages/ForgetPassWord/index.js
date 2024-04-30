@@ -326,7 +326,8 @@ const handleSendEmail = async (values) => {
                     Enviar Email
                   </Button>
                 )}
-                <Grid container justifyContent="flex-end">
+                {/* Cadastro
+                < Grid container justifyContent="flex-end">
                   <Grid item>
                     <Link
                       href="#"
@@ -337,7 +338,7 @@ const handleSendEmail = async (values) => {
                       {i18n.t("Não tem uma conta? Cadastre-se!")}
                     </Link>
                   </Grid>
-                </Grid>
+              </Grid> */}
                 {error && (
                   <Typography variant="body2" color="error">
                     {error}
