@@ -14,7 +14,7 @@ const useStyles = makeStyles(theme => ({
     padding: theme.spacing(1),
   },
   button: {
-    background: "#10a110",
+    background: "#09fea4",
     border: "none",
     padding: "10px",
     color: "white",
@@ -112,8 +112,8 @@ const Kanban = () => {
       },
 
       {
-        id: "lane0",
-        title: i18n.t("Em aberto"),
+        id: "lane1",
+        title: i18n.t("Em atendimento"),
         label: "0",
         cards: filteredTickets.map(ticket => ({
           id: ticket.id.toString(),
