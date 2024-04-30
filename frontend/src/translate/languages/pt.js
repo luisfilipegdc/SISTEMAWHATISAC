@@ -441,7 +441,7 @@ const messages = {
           tickets: "Atendimentos",
           quickMessages: "Respostas Rápidas",
           contacts: "Contatos",
-          queues: "Filas & Chatbot",
+          queues: "Departamentos & Chatbot",
           tags: "Tags",
           administration: "Administração",
           users: "Usuários",
