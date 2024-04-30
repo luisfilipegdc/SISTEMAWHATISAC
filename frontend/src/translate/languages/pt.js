@@ -750,7 +750,7 @@ const messages = {
         title: "Configurações de Campanhas",
       },
       queues: {
-        title: "Filas & Chatbot",
+        title: "Derpatamentos & Chatbot",
         table: {
 		  id:"ID",
           name: "Nome",
