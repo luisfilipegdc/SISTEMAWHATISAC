@@ -114,7 +114,7 @@ const Kanban = () => {
       {
         id: "lane1",
         title: i18n.t("Em atendimento"),
-        label: "0",
+        label: "1",
         cards: filteredTickets.map(ticket => ({
           id: ticket.id.toString(),
           label: "Ticket nº " + ticket.id.toString(),
