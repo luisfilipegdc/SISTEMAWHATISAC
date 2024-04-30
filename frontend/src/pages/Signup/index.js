@@ -36,7 +36,7 @@ const Copyright = () => {
 		<Typography variant="body2" color="textSecondary" align="center">
 			{"Copyright © "}
 			<Link color="inherit" href="#">
-				PLW
+				WhatiSac
 			</Link>{" "}
 		   {new Date().getFullYear()}
 			{"."}
@@ -119,7 +119,7 @@ const SignUp = () => {
 			<CssBaseline />
 			<div className={classes.paper}>
 				<div>
-					<img style={{ margin: "0 auto", height: "80px", width: "100%" }} src={logo} alt="Whats" />
+					<img style={{ margin: "0 auto", height: "80px", width: "100%" }} src={logo} alt="WhatiSac" />
 				</div>
 				{/*<Typography component="h1" variant="h5">
 					{i18n.t("signup.title")}
@@ -208,7 +208,7 @@ const SignUp = () => {
 									/>
 								</Grid>
 								<Grid item xs={12}>
-									<InputLabel htmlFor="plan-selection">Plano</InputLabel>
+									<InputLabel htmlFor="plan-selection">Planos</InputLabel>
 									<Field
 										as={Select}
 										variant="outlined"

@@ -1,7 +1,7 @@
 {
   "name": "frontend",
   "version": "0.1.0",
-  "versionSystem": "4.6.2",
+  "versionSystem": "1.0",
   "nomeEmpresa": "Whatisac",
   "private": true,
   "dependencies": {
