@@ -1,5 +1,6 @@
 import { createContext } from "react";
 import openSocket from "socket.io-client";
+import jwt from "jsonwebtoken";
 
 class ManagedSocket {
   constructor(socketManager) {
@@ -7,6 +8,24 @@ class ManagedSocket {
     this.rawSocket = socketManager.currentSocket;
     this.callbacks = [];
     this.joins = [];
+
+    this.rawSocket.on("connect", () => {
+      if (!this.rawSocket.recovered) {
+        const refreshJoinsOnReady = () => {
+          for (const j of this.joins) {
+            console.debug("refreshing join", j);
+            this.rawSocket.emit(`join${j.event}`, ...j.params);
+          }
+          this.rawSocket.off("ready", refreshJoinsOnReady);
+        };
+        for (const j of this.callbacks) {
+          this.rawSocket.off(j.event, j.callback);
+          this.rawSocket.on(j.event, j.callback);
+        }
+        
+        this.rawSocket.on("ready", refreshJoinsOnReady);
+      }
+    });
   }
   
   on(event, callback) {
@@ -18,12 +37,15 @@ class ManagedSocket {
   }
   
   off(event, callback) {
+    const i = this.callbacks.findIndex((c) => c.event === event && c.callback === callback);
+    this.callbacks.splice(i, 1);
     return this.rawSocket.off(event, callback);
   }
   
   emit(event, ...params) {
     if (event.startsWith("join")) {
       this.joins.push({ event: event.substring(4), params });
+      console.log("Joining", { event: event.substring(4), params});
     }
     return this.rawSocket.emit(event, ...params);
   }
@@ -69,13 +91,25 @@ const SocketManager = {
 
     if (companyId !== this.currentCompanyId || userId !== this.currentUserId) {
       if (this.currentSocket) {
+        console.warn("closing old socket - company or user changed");
+        this.currentSocket.removeAllListeners();
         this.currentSocket.disconnect();
         this.currentSocket = null;
       }
 
+      let token = JSON.parse(localStorage.getItem("token"));
+      const { exp } = jwt.decode(token);
+
+      if ( Date.now() >= exp*1000) {
+        console.warn("Expired token, reload after refresh");
+        setTimeout(() => {
+          window.location.reload();
+        },1000);
+        return new DummySocket();
+      }
+
       this.currentCompanyId = companyId;
       this.currentUserId = userId;
-      let token = JSON.parse(localStorage.getItem("token"));
       
       if (!token) {
         return new DummySocket();
@@ -88,8 +122,28 @@ const SocketManager = {
         query: { token },
       });
       
+      this.currentSocket.on("disconnect", (reason) => {
+        console.warn(`socket disconnected because: ${reason}`);
+        if (reason.startsWith("io ")) {
+          console.warn("tryng to reconnect", this.currentSocket);
+          
+          const { exp } = jwt.decode(token);
+          if ( Date.now()-180 >= exp*1000) {
+            console.warn("Expired token, reloading app");
+            window.location.reload();
+            return;
+          }
+
+          this.currentSocket.connect();
+        }        
+      });
+      
+      this.currentSocket.on("connect", (...params) => {
+        console.warn("socket connected", params);
+      })
+      
       this.currentSocket.onAny((event, ...args) => {
-        console.debug("Event: ", event, "\nArg[0] ", args[0]);
+        console.debug("Event: ", { socket: this.currentSocket, event, args });
       });
       
       this.onReady(() => {
@@ -107,12 +161,9 @@ const SocketManager = {
       return
     }
     
-    const callAndRemoveOnReady = () => {
+    this.currentSocket.once("ready", () => {
       callbackReady();
-      this.currentSocket.off("ready", callAndRemoveOnReady);
-    };
-    
-    this.currentSocket.on("ready", callAndRemoveOnReady);
+    });
   },
 
 };

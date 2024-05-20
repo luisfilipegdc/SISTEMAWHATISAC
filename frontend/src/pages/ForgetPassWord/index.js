@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     width: "100vw",
     height: "100vh",
-    background: "linear-gradient(to right, #0035aa , #407cff , #0050ff)", //Cor de fundo
+    background: "black", //Cor de fundo
     backgroundRepeat: "no-repeat",
     backgroundSize: "100% 100%",
     backgroundPosition: "center",
@@ -326,8 +326,7 @@ const handleSendEmail = async (values) => {
                     Enviar Email
                   </Button>
                 )}
-                {/* Cadastro
-                < Grid container justifyContent="flex-end">
+                <Grid container justifyContent="flex-end">
                   <Grid item>
                     <Link
                       href="#"
@@ -338,7 +337,7 @@ const handleSendEmail = async (values) => {
                       {i18n.t("Não tem uma conta? Cadastre-se!")}
                     </Link>
                   </Grid>
-              </Grid> */}
+                </Grid>
                 {error && (
                   <Typography variant="body2" color="error">
                     {error}

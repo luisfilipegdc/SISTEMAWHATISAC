@@ -19,11 +19,11 @@ import logo from "../../assets/logo.png";
 
 const Copyright = () => {
 	return (
-		<Typography variant="body2" color="#fff" align="center">
+		<Typography variant="body2" color="primary" align="center">
 			{"Copyright "}
- 			<Link color="#fff" href="https://whatisac.com.br/">
- 				- { nomeEmpresa } </Link> - { versionSystem } | Ano
- 			{" "}
+ 			<Link color="primary" href="#">
+ 				{ nomeEmpresa } - v { versionSystem }
+ 			</Link>{" "}
  			{new Date().getFullYear()}
  			{"."}
  		</Typography>
@@ -34,8 +34,8 @@ const useStyles = makeStyles(theme => ({
 	root: {
 		width: "100vw",
 		height: "100vh",
-		background: "linear-gradient(to right, #0035aa , #407cff , #0050ff)",
-		//backgroundImage: "url(https://i.imgur.com/CGby9tN.png)",
+		//background: "linear-gradient(to right, #76EE00 , #76EE00 , #458B00)",
+		backgroundImage: "url(https://i.imgur.com/CGby9tN.png)",
 		backgroundRepeat: "no-repeat",
 		backgroundSize: "100% 100%",
 		backgroundPosition: "center",
@@ -141,9 +141,7 @@ const Login = () => {
 					>
 						{i18n.t("login.buttons.submit")}
 					</Button>
-
-					
-					{ /* link para cadastro <Grid container>
+					{ <Grid container>
 						<Grid item>
 							<Link
 								href="#"
@@ -154,7 +152,7 @@ const Login = () => {
 								{i18n.t("login.buttons.register")}
 							</Link>
 						</Grid>
-			</Grid> */}
+					</Grid> }
 				</form>
 			
 			</div>

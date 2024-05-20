@@ -23,10 +23,10 @@ export const initIO = (httpServer: Server): SocketIO => {
     const { token } = socket.handshake.query;
     let tokenData = null;
     try {
-      tokenData = verify(token, authConfig.secret);
+      tokenData = verify(token as string, authConfig.secret);
       logger.debug(tokenData, "io-onConnection: tokenData");
     } catch (error) {
-      logger.error(error, "Error decoding token");
+      logger.warn(`[libs/socket.ts] Error decoding token: ${error?.message}`);
       socket.disconnect();
       return io;
     }

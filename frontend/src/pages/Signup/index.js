@@ -36,7 +36,7 @@ const Copyright = () => {
 		<Typography variant="body2" color="textSecondary" align="center">
 			{"Copyright © "}
 			<Link color="inherit" href="#">
-				WhatiSac
+				PLW
 			</Link>{" "}
 		   {new Date().getFullYear()}
 			{"."}
@@ -119,7 +119,7 @@ const SignUp = () => {
 			<CssBaseline />
 			<div className={classes.paper}>
 				<div>
-					<img style={{ margin: "0 auto", height: "80px", width: "100%" }} src={logo} alt="WhatiSac" />
+					<img style={{ margin: "0 auto", height: "80px", width: "100%" }} src={logo} alt="Whats" />
 				</div>
 				{/*<Typography component="h1" variant="h5">
 					{i18n.t("signup.title")}
@@ -186,7 +186,7 @@ const SignUp = () => {
 											{...field}
 											variant="outlined"
 											fullWidth
-											label="(DDD) 98888-8888"
+											label="DDD988888888"
 											inputProps={{ maxLength: 11 }} // Definindo o limite de caracteres
 										/>
 									)}
@@ -208,7 +208,7 @@ const SignUp = () => {
 									/>
 								</Grid>
 								<Grid item xs={12}>
-									<InputLabel htmlFor="plan-selection">Planos</InputLabel>
+									<InputLabel htmlFor="plan-selection">Plano</InputLabel>
 									<Field
 										as={Select}
 										variant="outlined"

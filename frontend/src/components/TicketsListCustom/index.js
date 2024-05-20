@@ -248,7 +248,7 @@ const TicketsListCustom = (props) => {
       const queueIds = queues.map((q) => q.id);
       if (
         profile === "user" &&
-        (queueIds.indexOf(data.ticket.queue?.id) === -1 ||
+        (queueIds.indexOf(data.ticket?.queue?.id) === -1 ||
           data.ticket.queue === null)
       ) {
         return;

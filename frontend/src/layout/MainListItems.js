@@ -141,7 +141,6 @@ const MainListItems = (props) => {
   const [openCampaignSubmenu, setOpenCampaignSubmenu] = useState(false);
   const [showCampaigns, setShowCampaigns] = useState(false);
   const [showKanban, setShowKanban] = useState(false);
-  const [openKanbanSubmenu, setOpenKanbanSubmenu] = useState(false);
   const [showOpenAi, setShowOpenAi] = useState(false);
   const [showIntegrations, setShowIntegrations] = useState(false); const history = useHistory();
   const [showSchedules, setShowSchedules] = useState(false);
@@ -303,7 +302,7 @@ const MainListItems = (props) => {
         icon={<WhatsAppIcon />}
       />
 	  
-	{showIntegrations && (  
+	{showKanban && (  
 	  <ListItemLink
         to="/kanban"
         primary={i18n.t("Kanban")}

@@ -93,17 +93,17 @@ export default function Options(props) {
   const [loadingCheckMsgIsGroup, setCheckMsgIsGroup] = useState(false);
 
 
-  const [ipixcType, setIpIxcType] = useState("");
-  const [loadingIpIxcType, setLoadingIpIxcType] = useState(false);
-  const [tokenixcType, setTokenIxcType] = useState("");
-  const [loadingTokenIxcType, setLoadingTokenIxcType] = useState(false);
+  //const [ipixcType, setIpIxcType] = useState("");
+  //const [loadingIpIxcType, setLoadingIpIxcType] = useState(false);
+  //const [tokenixcType, setTokenIxcType] = useState("");
+  //const [loadingTokenIxcType, setLoadingTokenIxcType] = useState(false);
 
-  const [ipmkauthType, setIpMkauthType] = useState("");
-  const [loadingIpMkauthType, setLoadingIpMkauthType] = useState(false);
-  const [clientidmkauthType, setClientIdMkauthType] = useState("");
-  const [loadingClientIdMkauthType, setLoadingClientIdMkauthType] = useState(false);
-  const [clientsecretmkauthType, setClientSecrectMkauthType] = useState("");
-  const [loadingClientSecrectMkauthType, setLoadingClientSecrectMkauthType] = useState(false);
+  //const [ipmkauthType, setIpMkauthType] = useState("");
+  //const [loadingIpMkauthType, setLoadingIpMkauthType] = useState(false);
+  //const [clientidmkauthType, setClientIdMkauthType] = useState("");
+  //const [loadingClientIdMkauthType, setLoadingClientIdMkauthType] = useState(false);
+  //const [clientsecretmkauthType, setClientSecrectMkauthType] = useState("");
+  //const [loadingClientSecrectMkauthType, setLoadingClientSecrectMkauthType] = useState(false);
 
   const [asaasType, setAsaasType] = useState("");
   const [loadingAsaasType, setLoadingAsaasType] = useState(false);
@@ -164,30 +164,30 @@ export default function Options(props) {
         setChatbotType(chatbotType.value);
       }
 
-      const ipixcType = settings.find((s) => s.key === "ipixc");
+	    {/*const ipixcType = settings.find((s) => s.key === "ipixc");
       if (ipixcType) {
         setIpIxcType(ipixcType.value);
-      }
+      }*/}
 
-      const tokenixcType = settings.find((s) => s.key === "tokenixc");
+      {/*const tokenixcType = settings.find((s) => s.key === "tokenixc");
       if (tokenixcType) {
         setTokenIxcType(tokenixcType.value);
-      }
+      }*/}
 
-      const ipmkauthType = settings.find((s) => s.key === "ipmkauth");
+      {/*const ipmkauthType = settings.find((s) => s.key === "ipmkauth");
       if (ipmkauthType) {
         setIpMkauthType(ipmkauthType.value);
-      }
+      }*/}
 
-      const clientidmkauthType = settings.find((s) => s.key === "clientidmkauth");
+     {/* const clientidmkauthType = settings.find((s) => s.key === "clientidmkauth");
       if (clientidmkauthType) {
         setClientIdMkauthType(clientidmkauthType.value);
-      }
+      }*/}
 
-      const clientsecretmkauthType = settings.find((s) => s.key === "clientsecretmkauth");
+      {/*const clientsecretmkauthType = settings.find((s) => s.key === "clientsecretmkauth");
       if (clientsecretmkauthType) {
         setClientSecrectMkauthType(clientsecretmkauthType.value);
-      }
+      }*/}
 
       const asaasType = settings.find((s) => s.key === "asaas");
       if (asaasType) {
@@ -305,7 +305,7 @@ export default function Options(props) {
     setLoadingSettingsTransfTicket(false);
   } 
  
-  async function handleChangeIPIxc(value) {
+ {/*async function handleChangeIPIxc(value) {
     setIpIxcType(value);
     setLoadingIpIxcType(true);
     await update({
@@ -316,7 +316,7 @@ export default function Options(props) {
     setLoadingIpIxcType(false);
   }
 
-  async function handleChangeTokenIxc(value) {
+   {/*async function handleChangeTokenIxc(value) {
     setTokenIxcType(value);
     setLoadingTokenIxcType(true);
     await update({
@@ -358,7 +358,7 @@ export default function Options(props) {
     });
     toast.success("Operação atualizada com sucesso.");
     setLoadingClientSecrectMkauthType(false);
-  }
+  }*/}
 
   async function handleChangeAsaas(value) {
     setAsaasType(value);
@@ -557,8 +557,8 @@ export default function Options(props) {
         </Tabs>
 
       </Grid>
-      {/*-----------------IXC-----------------*/}
-      <Grid spacing={3} container
+      {/*-----------------IXC DESATIVADO 4.6.5-----------------*/}
+      {/*<Grid spacing={3} container
         style={{ marginBottom: 10 }}>
         <Tabs
           indicatorColor="primary"
@@ -610,9 +610,9 @@ export default function Options(props) {
             </FormHelperText>
           </FormControl>
         </Grid>
-      </Grid>
-      {/*-----------------MK-AUTH-----------------*/}
-      <Grid spacing={3} container
+      </Grid>*/}
+      {/*-----------------MK-AUTH DESATIVADO 4.6.5-----------------*/}
+      {/*<Grid spacing={3} container
         style={{ marginBottom: 10 }}>
         <Tabs
           indicatorColor="primary"
@@ -681,7 +681,7 @@ export default function Options(props) {
             </FormHelperText>
           </FormControl>
         </Grid>
-      </Grid>
+      </Grid>*/}
       {/*-----------------ASAAS-----------------*/}
       <Grid spacing={3} container
         style={{ marginBottom: 10 }}>
