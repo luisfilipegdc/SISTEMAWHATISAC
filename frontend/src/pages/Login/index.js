@@ -19,11 +19,11 @@ import logo from "../../assets/logo.png";
 
 const Copyright = () => {
 	return (
-		<Typography variant="body2" color="primary" align="center">
+		<Typography variant="body2" color="light" align="center">
 			{"Copyright "}
- 			<Link color="primary" href="#">
+ 			<Link color="light" href="https://whatisac.com.br/">
  				{ nomeEmpresa } - v { versionSystem }
- 			</Link>{" "}
+ 			</Link>{" "} - 
  			{new Date().getFullYear()}
  			{"."}
  		</Typography>
@@ -34,7 +34,7 @@ const useStyles = makeStyles(theme => ({
 	root: {
 		width: "100vw",
 		height: "100vh",
-		background: "linear-gradient(to right, ##ebf2ff , #ebf2ff , #d8e4ff)",
+		background: "linear-gradient(to right, #0050FF , #0050FF , #0D1974)",
 		//backgroundImage: "url(https://i.imgur.com/CGby9tN.png)",
 		backgroundRepeat: "no-repeat",
 		backgroundSize: "100% 100%",
