@@ -2,7 +2,7 @@
   "name": "frontend",
   "version": "0.1.0",
   "versionSystem": "4.7.2",
-  "nomeEmpresa": "PLW Design",
+  "nomeEmpresa": "Whatisac",
   "private": true,
   "dependencies": {
     "@date-io/date-fns": "^2.14.0",
