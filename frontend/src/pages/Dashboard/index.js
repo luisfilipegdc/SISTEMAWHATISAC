@@ -646,6 +646,7 @@ const Dashboard = () => {
                     <Typography
                       component="h1"
                       variant="h4"
+                      style={{ color: "#FFFFFF" }} // Adicione esta linha para mudar a cor do texto para branco
                     >
                       {formatTime(counters.avgWaitTime)}
                     </Typography>
