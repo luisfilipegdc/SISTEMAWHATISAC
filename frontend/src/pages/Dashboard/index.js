@@ -638,7 +638,7 @@ const Dashboard = () => {
                     component="h3"
                     variant="h6"
                     paragraph
-                    className={classes.whiteText}  // Adicione esta linha
+                    style={{ color: "#FFFFFF" }} // Adicione esta linha para mudar a cor do texto para branco
                   >
                     T.M. de Espera
                   </Typography>
@@ -646,7 +646,6 @@ const Dashboard = () => {
                     <Typography
                       component="h1"
                       variant="h4"
-                      className={classes.whiteText}  // Adicione esta linha
                     >
                       {formatTime(counters.avgWaitTime)}
                     </Typography>
