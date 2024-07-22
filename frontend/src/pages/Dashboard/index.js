@@ -617,7 +617,7 @@ const Dashboard = () => {
                   <AccessAlarmIcon
                     style={{
                       fontSize: 100,
-                      color: "#FFFFFF",
+                      color: "#FFF",
                     }}
                   />
                 </Grid>
@@ -626,39 +626,43 @@ const Dashboard = () => {
           </Grid>
 
           {/* T.M. DE ESPERA */}
-          <Grid item xs={12} sm={6} md={4}>
-            <Paper
-              className={classes.card9}
-              style={{ overflow: "hidden" }}
-              elevation={6}
-            >
-              <Grid container spacing={3}>
-                <Grid item xs={8}>
-                  <Typography
-                    component="h3"
-                    variant="h6"
-                    paragraph
-                  >
-                    T.M. de Espera
-                  </Typography>
-                  <Grid item>
-                    <Typography
-                      component="h1"
-                      variant="h4"
-                    >
-                      {formatTime(counters.avgWaitTime)}
-                    </Typography>
-                  </Grid>
-                </Grid>
-                <Grid item xs={4}>
-                  <TimerIcon
-                    style={{
-                      fontSize: 100,
-                      color: "#FFFFFF",
-                    }}
-                  />
-                </Grid>
-              </Grid>
+<Grid item xs={12} sm={6} md={4}>
+  <Paper
+    className={classes.card9}
+    style={{ overflow: "hidden" }}
+    elevation={6}
+  >
+    <Grid container spacing={3}>
+      <Grid item xs={8}>
+        <Typography
+          component="h3"
+          variant="h6"
+          paragraph
+          className={classes.whiteText}  // Adicione esta linha
+        >
+          T.M. de Espera
+        </Typography>
+        <Grid item>
+          <Typography
+            component="h1"
+            variant="h4"
+            className={classes.whiteText}  // Adicione esta linha
+          >
+            {formatTime(counters.avgWaitTime)}
+          </Typography>
+        </Grid>
+      </Grid>
+      <Grid item xs={4}>
+        <TimerIcon
+          style={{
+            fontSize: 100,
+            color: "#FFFFFF",
+          }}
+        />
+      </Grid>
+    </Grid>
+  </Paper>
+</Grid>
             </Paper>
           </Grid>
 		  

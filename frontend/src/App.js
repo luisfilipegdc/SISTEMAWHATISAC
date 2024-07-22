@@ -52,7 +52,6 @@ const App = () => {
             palette: {
                 type: mode,
                 primary: { main: mode === "light" ? "#0050FF" : "#FFFFFF" },
-                branco: mode === "light" ? "#0050FF" : "#FFFFFF",
                 textPrimary: mode === "light" ? "#0050FF" : "#FFFFFF",
                 borderPrimary: mode === "light" ? "#0050FF" : "#FFFFFF",
                 dark: { main: mode === "light" ? "#333333" : "#F3F3F3" },
@@ -75,7 +74,7 @@ const App = () => {
                 total: mode === "light" ? "#fff" : "#222",
                 messageIcons: mode === "light" ? "grey" : "#F3F3F3",
                 inputBackground: mode === "light" ? "#FFFFFF" : "#333",
-                barraSuperior: mode === "light" ? "linear-gradient(to right, #0E1972, #0E1972 , #0E1972)" : "#666",
+                barraSuperior: mode === "light" ? "linear-gradient(to right, #0050FF, #0050FF , #0E1972)" : "#666",
 				boxticket: mode === "light" ? "#EEE" : "#666",
 				campaigntab: mode === "light" ? "#ededed" : "#666",
 				mediainput: mode === "light" ? "#ededed" : "#1c1c1c",
