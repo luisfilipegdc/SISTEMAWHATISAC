@@ -131,7 +131,7 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     height: "100%",
     backgroundColor: "#0050FF",
-    color: "#eee",
+    color: "#ffaf00",
   },
   card2: {
     padding: theme.spacing(2),
@@ -140,7 +140,7 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     height: "100%",
     backgroundColor: "#0050FF",
-    color: "#eee",
+    color: "#ffaf00",
   },
   card3: {
     padding: theme.spacing(2),
@@ -149,7 +149,7 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     height: "100%",
     backgroundColor: "#0050FF",
-    color: "#eee",
+    color: "#ffaf00",
   },
   card4: {
     padding: theme.spacing(2),
@@ -158,7 +158,7 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     height: "100%",
     backgroundColor: "#0050FF",
-    color: "#eee",
+    color: "#ffaf00",
   },
   card5: {
     padding: theme.spacing(2),
@@ -167,7 +167,7 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     height: "100%",
     backgroundColor: "#0050FF",
-    color: "#eee",
+    color: "#ffaf00",
   },
   card6: {
     padding: theme.spacing(2),
@@ -176,7 +176,7 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     height: "100%",
     backgroundColor: "#0050FF",
-    color: "#eee",
+    color: "#ffaf00",
   },
   card7: {
     padding: theme.spacing(2),
@@ -185,7 +185,7 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     height: "100%",
     backgroundColor: "#0050FF",
-    color: "#eee",
+    color: "#ffaf00",
   },
   card8: {
     padding: theme.spacing(2),
@@ -194,7 +194,7 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     height: "100%",
     backgroundColor: "#0050FF",
-    color: "#eee",
+    color: "#ffaf00",
   },
   card9: {
     padding: theme.spacing(2),
@@ -203,7 +203,7 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     height: "100%",
     backgroundColor: "#0050FF",
-    color: "#eee",
+    color: "#ffaf00",
   },
   fixedHeightPaper2: {
     padding: theme.spacing(2),
