@@ -131,7 +131,7 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     height: "100%",
     backgroundColor: "#0050FF",
-    color: "#ffaf00",
+    color: "#eee",
   },
   card2: {
     padding: theme.spacing(2),
@@ -140,7 +140,7 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     height: "100%",
     backgroundColor: "#0050FF",
-    color: "#ffaf00",
+    color: "#eee",
   },
   card3: {
     padding: theme.spacing(2),
@@ -149,7 +149,7 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     height: "100%",
     backgroundColor: "#0050FF",
-    color: "#ffaf00",
+    color: "#eee",
   },
   card4: {
     padding: theme.spacing(2),
@@ -158,7 +158,7 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     height: "100%",
     backgroundColor: "#0050FF",
-    color: "#ffaf00",
+    color: "#eee",
   },
   card5: {
     padding: theme.spacing(2),
@@ -167,7 +167,7 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     height: "100%",
     backgroundColor: "#0050FF",
-    color: "#ffaf00",
+    color: "#eee",
   },
   card6: {
     padding: theme.spacing(2),
@@ -176,7 +176,7 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     height: "100%",
     backgroundColor: "#0050FF",
-    color: "#ffaf00",
+    color: "#eee",
   },
   card7: {
     padding: theme.spacing(2),
@@ -185,7 +185,7 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     height: "100%",
     backgroundColor: "#0050FF",
-    color: "#ffaf00",
+    color: "#eee",
   },
   card8: {
     padding: theme.spacing(2),
@@ -194,7 +194,7 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     height: "100%",
     backgroundColor: "#0050FF",
-    color: "#ffaf00",
+    color: "#eee",
   },
   card9: {
     padding: theme.spacing(2),
@@ -203,7 +203,7 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     height: "100%",
     backgroundColor: "#0050FF",
-    color: "#ffaf00",
+    color: "##ffaf00",
   },
   fixedHeightPaper2: {
     padding: theme.spacing(2),
@@ -426,7 +426,7 @@ const Dashboard = () => {
                   <CallIcon
                     style={{
                       fontSize: 100,
-                      color: "#0b708c",
+                      color: "#FFFFFF",
                     }}
                   />
                 </Grid>
@@ -463,7 +463,7 @@ const Dashboard = () => {
                   <HourglassEmptyIcon
                     style={{
                       fontSize: 100,
-                      color: "#47606e",
+                      color: "#FFFFFF",
                     }}
                   />
                 </Grid>
@@ -542,7 +542,7 @@ const Dashboard = () => {
                   <CheckCircleIcon
                     style={{
                       fontSize: 100,
-                      color: "#5852ab",
+                      color: "#FFFFFF",
                     }}
                   />
                 </Grid>
@@ -579,7 +579,7 @@ const Dashboard = () => {
                   <GroupAddIcon
                     style={{
                       fontSize: 100,
-                      color: "#8c6b19",
+                      color: "#FFFFFF",
                     }}
                   />
                 </Grid>
@@ -617,7 +617,7 @@ const Dashboard = () => {
                   <AccessAlarmIcon
                     style={{
                       fontSize: 100,
-                      color: "#7a3f26",
+                      color: "#FFFFFF",
                     }}
                   />
                 </Grid>
@@ -654,7 +654,7 @@ const Dashboard = () => {
                   <TimerIcon
                     style={{
                       fontSize: 100,
-                      color: "#8a2c40",
+                      color: "#FFFFFF",
                     }}
                   />
                 </Grid>
